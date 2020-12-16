@@ -6,6 +6,8 @@ and returns the decimal equivalent. That is, if the user enters 50, you’ll ass
 it’s a hex number (equal to 0x50) and will print the value 80 to the screen.
 And no, you shouldn’t convert the number all at once using the int function,
 although it’s permissible to use int one digit at a time.
+
+The book solution uses the built-in int to get the power of the value.
 """
 
 
