@@ -1,7 +1,7 @@
 import random
 
 
-def guessing_game_number():
+def guessing_game():
     """Guessing game
 
     Write a function (guessing_game) that takes no arguments.
