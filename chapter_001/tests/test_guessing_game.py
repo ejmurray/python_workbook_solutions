@@ -1,4 +1,4 @@
-from chapter_001.c001_numeric_types import e
+from chapter_001 import e
 from io import StringIO
 import random
 

@@ -1,7 +1,7 @@
 from io import StringIO
 import random
 import pytest
-from chapter_001 import c001_numeric_types
+import chapter_001
 
 
 def test_correct(monkeypatch, capsys):
