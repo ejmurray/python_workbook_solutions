@@ -4,30 +4,28 @@ word on each of the first 10 lines, where n is the line number.
 """
 
 
-def nonsensical_text(filename: str, word_number: int):
+def nonsensical_text(filename: str, nth_word: int):
     """
     Read in a file and return a nonsense sentence.
 
-    :param word_number: Index of letter to jumble.
+    :param nth_word: Index of letter to jumble.
     :param filename: Name of text file.
     :return: Nonsense sentence.
     """
 
     with open(filename, "r") as f:
-        count = 10
         pig_sentence = []
         vowels = "aeiouAEIOU"
 
         for line in f:
             words = line.rstrip().split(" ")
-            word_n = words[word_number]
+            word_n = words[nth_word]
             if word_n[0] in vowels:
                 pig_sentence.append(f"{word_n}way")
             else:
                 pig_sentence.append(f"{word_n[1:]}{word_n[0]}ay")
-            count -= 1
 
-    return " ".join(pig_sentence)
+    return " ".join(pig_sentence[:10])
 
 
-print(nonsensical_text("test_text.txt", 2))
+print(nonsensical_text("test_text.txt", 8))
