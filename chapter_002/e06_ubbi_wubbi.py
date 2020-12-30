@@ -20,4 +20,3 @@ def ubbi_dubbi(word):
 
 
 assert ubbi_dubbi('octopus') == "uboctubopubus", 'Incorrect translation.'
-
