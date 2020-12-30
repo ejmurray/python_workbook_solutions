@@ -156,7 +156,7 @@ dmypy.json
 .idea/**/shelf
 .idea/**/dbnavigator.xml
 .idea/**/misc.xml
-.idea/**/*.imi
+.idea/**/python_workout_solutionss.imi
 
 # Generated files
 .idea/**/contentModel.xml
